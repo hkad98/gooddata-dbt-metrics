@@ -22,7 +22,7 @@ services:
       DBT_HOST: "gooddata-cn-ce"
     depends_on:
       - gooddata-cn-ce
-    command: bash -c "python is_gooddata_up.py && cd data_transformation && dbt run && cd .. && python bootstrap_gd.py"
+    command: bash -c "python is_gooddata_up.py && cd data_transformation && dbt deps && dbt run && cd .. && python bootstrap_gd.py"
 
 volumes:
   gooddata-dbt-metrics-data:
