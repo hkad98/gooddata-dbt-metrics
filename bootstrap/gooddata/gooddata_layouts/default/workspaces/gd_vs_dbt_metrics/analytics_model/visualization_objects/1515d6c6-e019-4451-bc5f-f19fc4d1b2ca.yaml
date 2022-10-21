@@ -1,0 +1,38 @@
+content:
+  buckets:
+    - items:
+        - measure:
+            definition:
+              measureDefinition:
+                filters: []
+                item:
+                  identifier:
+                    id: revenue_from_top_10_customers
+                    type: metric
+            localIdentifier: f671d38e2d8347c09d75fb87137e5cad
+            title: '% Revenue from Top 10% Customers'
+      localIdentifier: measures
+    - items:
+        - attribute:
+            displayForm:
+              identifier:
+                id: region
+                type: label
+            localIdentifier: 7a93d218b1f444448bbb9a4bfb037855
+      localIdentifier: view
+    - items:
+        - attribute:
+            displayForm:
+              identifier:
+                id: state
+                type: label
+            localIdentifier: 304d50cee07049de94237689f5602d8a
+      localIdentifier: stack
+  filters: []
+  properties: {}
+  sorts: []
+  version: '2'
+  visualizationUrl: local:heatmap
+description: Contribution of Top 10% Customers by Region and State
+id: 1515d6c6-e019-4451-bc5f-f19fc4d1b2ca
+title: Contribution of Top 10% Customers by Region and State

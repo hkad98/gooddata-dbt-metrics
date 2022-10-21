@@ -20,6 +20,25 @@ content:
               ignoreDashboardFilters: []
               insight:
                 identifier:
+                  id: 1515d6c6-e019-4451-bc5f-f19fc4d1b2ca
+                  type: visualizationObject
+              properties: {}
+              title: Contribution of Top 10% Customers by Region and State
+              type: insight
+          - size:
+              xl:
+                gridWidth: 6
+            type: IDashboardLayoutItem
+            widget:
+              dateDataSet:
+                identifier:
+                  id: date
+                  type: dataset
+              description: ''
+              drills: []
+              ignoreDashboardFilters: []
+              insight:
+                identifier:
                   id: a8addae1-8124-4783-83c2-249a1de6e8b7
                   type: visualizationObject
               properties: {}
