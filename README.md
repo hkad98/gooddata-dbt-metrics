@@ -13,7 +13,7 @@ docker compose up -d
 
 ## Exploring
 
-Feel free to explore and compare GoodData and dbt metrics. You can access running GoodData on [http://localhost:3000](http://localhost:3000). There is a bootstraped workspace with basic visualizatons and metrics.
+Feel free to explore and compare GoodData and dbt metrics. You can access running GoodData on [http://localhost:3000](http://localhost:3000). There is a bootstraped workspace with basic visualizatons and GoodData and dbt metrics.
 
 GoodData credentials:
 * Username: demo@example.com
@@ -23,3 +23,25 @@ GoodData credentials:
 Database credentials:
 * Username: demouser
 * Password: demopass
+
+## GoodData metrics
+
+You can create new metrics in GoodData in metric or in analyze tab. The metrics are created using [MAQL syntax](https://www.gooddata.com/developers/cloud-native/doc/cloud/create-metrics/maql/) which similar to SQL syntax.
+
+![](images/analyze_tab.png)
+![](images/metrics_tab.png)
+
+## dbt metrics
+
+You can change dbt metrics in [dbt models directory](bootstrap/data_transformation/models/). When you update metrics all you need to do is to run the following commands:
+
+```bash
+# install dependencies
+dbt deps 
+
+# run transformation
+dbt run
+```
+
+> **Warning**
+> Do not forget to have `~/.dbt/profiles.yml` file set. You can reuse [profiles.yml](bootstrap/profiles.yml) and do not forget to set the host to `localhost`.
