@@ -1,5 +1,5 @@
 content:
-  format: '#,##0'
+  format: '#,##0.00%'
   maql: SELECT {metric/gd_revenue} WHERE TOP(10%) OF ({metric/gd_revenue})
 description: ''
 id: revenue_top_10
