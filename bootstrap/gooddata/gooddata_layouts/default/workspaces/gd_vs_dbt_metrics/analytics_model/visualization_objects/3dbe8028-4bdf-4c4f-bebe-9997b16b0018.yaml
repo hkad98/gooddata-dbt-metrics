@@ -1,0 +1,45 @@
+content:
+  buckets:
+    - items:
+        - measure:
+            definition:
+              measureDefinition:
+                aggregation: sum
+                filters: []
+                item:
+                  identifier:
+                    id: revenue
+                    type: fact
+            format: '#,##0'
+            localIdentifier: 1e506a03862a47d1ac8d12303282f228
+            title: Sum of dbt Revenue metric
+        - measure:
+            definition:
+              measureDefinition:
+                filters: []
+                item:
+                  identifier:
+                    id: gd_revenue
+                    type: metric
+            localIdentifier: 1323057dbe714ad0addd646bf4322697
+            title: GD Revenue
+      localIdentifier: measures
+    - items:
+        - attribute:
+            displayForm:
+              identifier:
+                id: date.year
+                type: label
+            localIdentifier: 805ac29362fa4935b260d57c6934a701
+      localIdentifier: attribute
+  filters: []
+  properties: {}
+  sorts:
+    - attributeSortItem:
+        attributeIdentifier: 805ac29362fa4935b260d57c6934a701
+        direction: asc
+  version: '2'
+  visualizationUrl: local:table
+description: Revenue versus
+id: 3dbe8028-4bdf-4c4f-bebe-9997b16b0018
+title: Revenue versus

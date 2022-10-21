@@ -1,0 +1,25 @@
+attributes: []
+dataSourceTableId:
+  dataSourceId: dbt-ds
+  id: revenue_metric
+  type: dataSource
+description: Revenue metric
+facts:
+  - description: Revenue
+    id: revenue
+    sourceColumn: revenue
+    tags:
+      - Revenue metric
+    title: dbt Revenue metric
+grain: []
+id: revenue_metric
+references:
+  - identifier:
+      id: date
+      type: dataset
+    multivalue: false
+    sourceColumns:
+      - date_day
+tags:
+  - Revenue metric
+title: Revenue metric

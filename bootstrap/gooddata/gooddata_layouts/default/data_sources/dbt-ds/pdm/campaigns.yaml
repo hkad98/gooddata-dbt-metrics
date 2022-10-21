@@ -1,0 +1,12 @@
+columns:
+  - dataType: INT
+    isPrimaryKey: false
+    name: campaign_id
+  - dataType: STRING
+    isPrimaryKey: false
+    name: campaign_name
+id: campaigns
+path:
+  - dev
+  - campaigns
+type: VIEW

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: campaigns
+    description: ""
+    columns:
+      - name: campaign_id
+        description: ""
+
+      - name: campaign_name
+        description: ""

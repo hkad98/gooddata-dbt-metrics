@@ -1,0 +1,25 @@
+attributes: []
+dataSourceTableId:
+  dataSourceId: dbt-ds
+  id: order_amount_metric
+  type: dataSource
+description: Order amount metric
+facts:
+  - description: Order amount
+    id: order_amount_metric.order_amount
+    sourceColumn: order_amount
+    tags:
+      - Order amount metric
+    title: dbt Order amount metric
+grain: []
+id: order_amount_metric
+references:
+  - identifier:
+      id: date
+      type: dataset
+    multivalue: false
+    sourceColumns:
+      - date_day
+tags:
+  - Order amount metric
+title: Order amount metric

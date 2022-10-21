@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: demo
+    tables:
+      - name: campaign_channels
+      - name: campaigns
+      - name: customers
+      - name: order_lines
+      - name: products

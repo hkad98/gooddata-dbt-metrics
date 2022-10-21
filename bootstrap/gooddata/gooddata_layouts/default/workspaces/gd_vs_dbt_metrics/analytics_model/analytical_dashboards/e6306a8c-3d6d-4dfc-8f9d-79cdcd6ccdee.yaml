@@ -1,0 +1,33 @@
+content:
+  filterContextRef:
+    identifier:
+      id: 12ff29ab-c64a-46b3-879f-69c8c9796962
+      type: filterContext
+  layout:
+    sections:
+      - items:
+          - size:
+              xl:
+                gridWidth: 6
+            type: IDashboardLayoutItem
+            widget:
+              dateDataSet:
+                identifier:
+                  id: date
+                  type: dataset
+              description: ''
+              drills: []
+              ignoreDashboardFilters: []
+              insight:
+                identifier:
+                  id: a8addae1-8124-4783-83c2-249a1de6e8b7
+                  type: visualizationObject
+              properties: {}
+              title: Top 10 Customers
+              type: insight
+        type: IDashboardLayoutSection
+    type: IDashboardLayout
+  version: '2'
+description: ''
+id: e6306a8c-3d6d-4dfc-8f9d-79cdcd6ccdee
+title: Where dbt does not work

@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: campaign_channels
+    description: ""
+    columns:
+      - name: campaign_channel_id
+        descritpion: ""
+
+      - name: category
+        description: ""
+
+      - name: type
+        description: ""
+
+      - name: budget
+        description: ""
+
+      - name: spend
+        description: ""
+
+      - name: campaign_id
+        description: ""

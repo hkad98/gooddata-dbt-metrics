@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: products
+    description: ""
+    columns:
+      - name: product_id
+        description: ""
+
+      - name: product_name
+        description: ""
+
+      - name: category
+        description: ""

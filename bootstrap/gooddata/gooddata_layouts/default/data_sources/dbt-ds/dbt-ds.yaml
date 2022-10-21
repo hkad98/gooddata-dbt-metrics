@@ -1,0 +1,8 @@
+enableCaching: false
+id: dbt-ds
+name: dbt
+permissions: []
+schema: dev
+type: POSTGRESQL
+url: jdbc:postgresql://localhost:5432/demo?sslmode=prefer
+username: demouser

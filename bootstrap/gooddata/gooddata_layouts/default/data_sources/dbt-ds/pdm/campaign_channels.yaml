@@ -1,0 +1,24 @@
+columns:
+  - dataType: NUMERIC
+    isPrimaryKey: false
+    name: budget
+  - dataType: STRING
+    isPrimaryKey: false
+    name: campaign_channel_id
+  - dataType: INT
+    isPrimaryKey: false
+    name: campaign_id
+  - dataType: STRING
+    isPrimaryKey: false
+    name: category
+  - dataType: NUMERIC
+    isPrimaryKey: false
+    name: spend
+  - dataType: STRING
+    isPrimaryKey: false
+    name: type
+id: campaign_channels
+path:
+  - dev
+  - campaign_channels
+type: VIEW

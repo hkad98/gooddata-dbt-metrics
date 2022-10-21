@@ -1,0 +1,29 @@
+attributes:
+  - description: Campaign name
+    id: campaign_name
+    labels: []
+    sourceColumn: campaign_name
+    tags:
+      - Campaigns
+    title: Campaign name
+  - description: Campaign id
+    id: campaigns.campaign_id
+    labels: []
+    sourceColumn: campaign_id
+    tags:
+      - Campaigns
+    title: Campaign id
+dataSourceTableId:
+  dataSourceId: dbt-ds
+  id: campaigns
+  type: dataSource
+description: Campaigns
+facts: []
+grain:
+  - id: campaigns.campaign_id
+    type: attribute
+id: campaigns
+references: []
+tags:
+  - Campaigns
+title: Campaigns

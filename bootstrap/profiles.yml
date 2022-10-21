@@ -1,0 +1,14 @@
+data_transformation:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1
+      host: "{{ env_var('DBT_HOST','gooddata-cn-ce') }}"
+      port: 5432
+      user: demouser
+      pass: demopass
+      dbname: demo
+      schema: dev
+  
+  target: dev

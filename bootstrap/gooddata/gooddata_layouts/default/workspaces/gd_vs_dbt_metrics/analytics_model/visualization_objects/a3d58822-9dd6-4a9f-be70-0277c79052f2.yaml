@@ -1,0 +1,45 @@
+content:
+  buckets:
+    - items:
+        - measure:
+            definition:
+              measureDefinition:
+                aggregation: sum
+                filters: []
+                item:
+                  identifier:
+                    id: order_amount_metric.order_amount
+                    type: fact
+            format: '#,##0'
+            localIdentifier: 751e5e2fb69d415bb386578a045dae6e
+            title: Sum of dbt Order amount metric
+        - measure:
+            definition:
+              measureDefinition:
+                filters: []
+                item:
+                  identifier:
+                    id: gd_order_amount
+                    type: metric
+            localIdentifier: 254fa76d2bed41e1817920079702d547
+            title: GD Order amount
+      localIdentifier: measures
+    - items:
+        - attribute:
+            displayForm:
+              identifier:
+                id: date.year
+                type: label
+            localIdentifier: ffc493126b474df9b212749e82af8a64
+      localIdentifier: attribute
+  filters: []
+  properties: {}
+  sorts:
+    - attributeSortItem:
+        attributeIdentifier: ffc493126b474df9b212749e82af8a64
+        direction: asc
+  version: '2'
+  visualizationUrl: local:table
+description: Order amount versus
+id: a3d58822-9dd6-4a9f-be70-0277c79052f2
+title: Order amount versus

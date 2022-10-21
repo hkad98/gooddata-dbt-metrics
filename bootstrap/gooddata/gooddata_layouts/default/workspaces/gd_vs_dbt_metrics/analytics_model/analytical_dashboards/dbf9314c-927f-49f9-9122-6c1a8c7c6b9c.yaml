@@ -1,0 +1,52 @@
+content:
+  filterContextRef:
+    identifier:
+      id: b8a10fc3-6c48-4d00-8488-5269609f2afc
+      type: filterContext
+  layout:
+    sections:
+      - items:
+          - size:
+              xl:
+                gridWidth: 6
+            type: IDashboardLayoutItem
+            widget:
+              dateDataSet:
+                identifier:
+                  id: date
+                  type: dataset
+              description: ''
+              drills: []
+              ignoreDashboardFilters: []
+              insight:
+                identifier:
+                  id: 3dbe8028-4bdf-4c4f-bebe-9997b16b0018
+                  type: visualizationObject
+              properties: {}
+              title: Revenue versus
+              type: insight
+          - size:
+              xl:
+                gridWidth: 6
+            type: IDashboardLayoutItem
+            widget:
+              dateDataSet:
+                identifier:
+                  id: date
+                  type: dataset
+              description: ''
+              drills: []
+              ignoreDashboardFilters: []
+              insight:
+                identifier:
+                  id: a3d58822-9dd6-4a9f-be70-0277c79052f2
+                  type: visualizationObject
+              properties: {}
+              title: Order amount versus
+              type: insight
+        type: IDashboardLayoutSection
+    type: IDashboardLayout
+  version: '2'
+description: ''
+id: dbf9314c-927f-49f9-9122-6c1a8c7c6b9c
+title: The same feature set

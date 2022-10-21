@@ -1,0 +1,15 @@
+columns:
+  - dataType: DATE
+    isPrimaryKey: false
+    name: date_day
+  - dataType: NUMERIC
+    isPrimaryKey: false
+    name: order_amount
+  - dataType: NUMERIC
+    isPrimaryKey: false
+    name: revenue
+id: revenue_metric
+path:
+  - dev
+  - revenue_metric
+type: VIEW

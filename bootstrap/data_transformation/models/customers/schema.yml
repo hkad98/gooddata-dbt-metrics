@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: customers
+    description: ""
+    columns:
+      - name: customer_id
+        description: ""
+
+      - name: customer_name
+        description: ""
+
+      - name: state
+        description: ""
+
+      - name: region
+        description: ""
+
+      - name: geo__state__location
+        description: ""

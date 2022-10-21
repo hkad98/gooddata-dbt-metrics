@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  gooddata-cn-ce:
+    # Use the dev_latest tag which points to the latest development
+    image: gooddata/gooddata-cn-ce:2.1
+    ports:
+      - "3000:3000"
+      - "5432:5432"
+    volumes:
+      - gooddata-dbt-metrics-data:/data
+    environment:
+      LICENSE_AND_PRIVACY_POLICY_ACCEPTED: "YES"
+      APP_LOGLEVEL: "INFO"
+
+  bootstrap:
+    build:
+      context: .
+      dockerfile: bootstrap/Dockerfile
+    environment:
+      HOST: "http://gooddata-cn-ce:3000"
+      DBT_HOST: "gooddata-cn-ce"
+    depends_on:
+      - gooddata-cn-ce
+    command: bash -c "python is_gooddata_up.py && cd data_transformation && dbt run && cd .. && python bootstrap_gd.py"
+
+volumes:
+  gooddata-dbt-metrics-data:

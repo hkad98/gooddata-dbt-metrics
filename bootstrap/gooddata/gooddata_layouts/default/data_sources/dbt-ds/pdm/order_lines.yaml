@@ -1,0 +1,39 @@
+columns:
+  - dataType: INT
+    isPrimaryKey: false
+    name: campaign_id
+  - dataType: INT
+    isPrimaryKey: false
+    name: customer_id
+  - dataType: DATE
+    isPrimaryKey: false
+    name: date
+  - dataType: STRING
+    isPrimaryKey: false
+    name: order_id
+  - dataType: STRING
+    isPrimaryKey: false
+    name: order_line_id
+  - dataType: STRING
+    isPrimaryKey: false
+    name: order_status
+  - dataType: NUMERIC
+    isPrimaryKey: false
+    name: price
+  - dataType: INT
+    isPrimaryKey: false
+    name: product_id
+  - dataType: NUMERIC
+    isPrimaryKey: false
+    name: quantity
+  - dataType: STRING
+    isPrimaryKey: false
+    name: wdf__region
+  - dataType: STRING
+    isPrimaryKey: false
+    name: wdf__state
+id: order_lines
+path:
+  - dev
+  - order_lines
+type: VIEW

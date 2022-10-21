@@ -1,0 +1,6 @@
+content:
+  format: '#,##0'
+  maql: "SELECT {metric/gd_order_amount}\n  WHERE {label/order_status} = \"Delivered\""
+description: ''
+id: gd_revenue
+title: GD Revenue

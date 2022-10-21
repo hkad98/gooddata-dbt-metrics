@@ -1,0 +1,1 @@
+select * from {{ metrics.calculate(metric('order_amount'), grain='day') }}

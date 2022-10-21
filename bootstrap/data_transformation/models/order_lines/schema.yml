@@ -1,0 +1,68 @@
+version: 2
+
+models:
+  - name: order_lines
+    description: ""
+    columns:
+      - name: order_line_id
+        description: ""
+
+      - name: order_id
+        description: ""
+
+      - name: order_status
+        description: ""
+
+      - name: date
+        description: ""
+
+      - name: campaign_id
+        description: ""
+
+      - name: customer_id
+        description: ""
+
+      - name: product_id
+        description: ""
+
+      - name: price
+        description: ""
+
+      - name: quantity
+        description: ""
+
+      - name: wdf__state
+        description: ""
+
+      - name: wdf__region
+        description: ""
+
+metrics:
+  - name: order_amount
+    label: Order amount
+    model: ref('order_lines')
+    
+    calculation_method: sum
+    expression: price * quantity
+
+    timestamp: date
+    time_grains: [day, week, month, quarter, year]
+
+  - name: revenue
+    label: Revenue
+    model: ref('order_lines')
+    
+    calculation_method: sum
+    expression: price * quantity
+    
+    # calculation_method: derived
+    # expression: "{{metric('order_amount')}}"
+
+    timestamp: date
+    time_grains: [day, week, month, quarter, year]
+
+    filters:
+      - field: order_status
+        operator: '='
+        value: "'Delivered'"
+    
