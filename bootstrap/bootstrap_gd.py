@@ -2,6 +2,7 @@ import os
 from gooddata_sdk import GoodDataSdk
 from pathlib import Path
 
+
 def main():
     host = os.environ.get("HOST", "http://gooddata-cn-ce:3000")
     token = os.environ.get("TOKEN", "YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz")
@@ -14,6 +15,7 @@ def main():
     print("Bootstraping workspace...", flush=True)
     sdk.catalog_workspace.load_and_put_declarative_workspaces(Path("gooddata"))
     print("GoodData is bootstraped.", flush=True)
+
 
 if __name__ == "__main__":
     main()
