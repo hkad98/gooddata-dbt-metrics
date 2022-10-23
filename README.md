@@ -33,7 +33,7 @@ You can create new metrics in GoodData in metric or in analyze tab. The metrics 
 
 ## dbt metrics
 
-You can change dbt metrics in [dbt models directory](bootstrap/data_transformation/models/). When you update metrics all you need to do is to run the following commands:
+You can change dbt metrics in [dbt model schema file](bootstrap/data_transformation/models/order_lines/schema.yml). When you update metrics all you need to do is to run the following commands in [data_transformation](bootstrap/data_transformation/) folder:
 
 ```bash
 # install dependencies
