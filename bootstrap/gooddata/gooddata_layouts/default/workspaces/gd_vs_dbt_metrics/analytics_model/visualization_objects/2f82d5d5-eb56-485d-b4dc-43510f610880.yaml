@@ -1,0 +1,39 @@
+content:
+  buckets:
+    - items:
+        - measure:
+            definition:
+              measureDefinition:
+                filters: []
+                item:
+                  identifier:
+                    id: revenue_from_top_10_customers
+                    type: metric
+            localIdentifier: 8c1cb9378f0f433c85336b6e9f1d074d
+            title: '% Revenue from Top 10% Customers'
+      localIdentifier: measures
+    - items:
+        - attribute:
+            displayForm:
+              identifier:
+                id: products.category
+                type: label
+            localIdentifier: 68b60190ac5447dc8523b655f4c50f75
+        - attribute:
+            displayForm:
+              identifier:
+                id: product_name
+                type: label
+            localIdentifier: 4b34ac65dc6e42979c80c1adf838817e
+      localIdentifier: attribute
+  filters: []
+  properties: {}
+  sorts:
+    - attributeSortItem:
+        attributeIdentifier: 68b60190ac5447dc8523b655f4c50f75
+        direction: asc
+  version: '2'
+  visualizationUrl: local:table
+description: Contribution of Top 10% customers by Product
+id: 2f82d5d5-eb56-485d-b4dc-43510f610880
+title: Contribution of Top 10% customers by Product

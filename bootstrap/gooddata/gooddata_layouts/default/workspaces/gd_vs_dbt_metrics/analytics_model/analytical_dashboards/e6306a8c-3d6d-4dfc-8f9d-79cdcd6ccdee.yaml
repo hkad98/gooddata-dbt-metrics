@@ -8,6 +8,7 @@ content:
       - items:
           - size:
               xl:
+                gridHeight: 30
                 gridWidth: 6
             type: IDashboardLayoutItem
             widget:
@@ -27,6 +28,7 @@ content:
               type: insight
           - size:
               xl:
+                gridHeight: 30
                 gridWidth: 6
             type: IDashboardLayoutItem
             widget:
@@ -39,10 +41,10 @@ content:
               ignoreDashboardFilters: []
               insight:
                 identifier:
-                  id: a8addae1-8124-4783-83c2-249a1de6e8b7
+                  id: 2f82d5d5-eb56-485d-b4dc-43510f610880
                   type: visualizationObject
               properties: {}
-              title: Top 10 Customers
+              title: Contribution of Top 10% customers by Product
               type: insight
         type: IDashboardLayoutSection
     type: IDashboardLayout
