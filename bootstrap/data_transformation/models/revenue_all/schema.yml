@@ -1,0 +1,92 @@
+version: 2
+
+models:
+  - name: revenue_all
+    description: ""
+    columns:
+      - name: order_line_id
+        description: ""
+
+      - name: order_id
+        description: ""
+
+      - name: order_status
+        description: ""
+
+      - name: date
+        description: ""
+
+      - name: campaign_id
+        description: ""
+
+      - name: customer_id
+        description: ""
+
+      - name: product_id
+        description: ""
+
+      - name: price
+        description: ""
+
+      - name: quantity
+        description: ""
+
+      - name: customer_name
+        description: ""
+
+      - name: state
+        description: ""
+
+      - name: region
+        description: ""
+      
+      - name: product_name
+        description: ""
+
+      - name: category
+        description: ""
+
+metrics:
+  - name: order_amount
+    label: Order amount
+    model: ref('revenue_all')
+    
+    calculation_method: sum
+    expression: price * quantity
+
+    timestamp: date
+    time_grains: [day, week, month, quarter, year]
+
+  - name: revenue
+    label: Revenue
+    model: ref('revenue_all')
+    
+    calculation_method: sum
+    expression: price * quantity
+
+    # calculation_method: derived
+    # expression: "{{metric('order_amount')}}"
+
+    timestamp: date
+    time_grains: [day, week, month, quarter, year]
+
+    dimensions: [
+              order_id,
+              order_status,
+              date,
+              campaign_id,
+              customer_id,
+              product_id,
+              price,
+              quantity,
+              customer_name,
+              state,
+              region,
+              product_name,
+              category
+    ]
+
+    filters:
+      - field: order_status
+        operator: '='
+        value: "'Delivered'"

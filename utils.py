@@ -21,6 +21,9 @@ def clean_dir(path: str = LAYOUT_FOLDER) -> None:
         rmtree(path)
     os.makedirs(path)
 
+def invalidate_cache(data_source_id: str = "dbt-ds"):
+    sdk.catalog_data_source.register_upload_notification(data_source_id)
+
 
 def load():
     print("Loading declarative data sources...")

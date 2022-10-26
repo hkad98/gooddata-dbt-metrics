@@ -31,6 +31,21 @@ You can create new metrics in GoodData in metric or in analyze tab. The metrics 
 ![](images/analyze_tab.png)
 ![](images/metrics_tab.png)
 
+If you want to store the progress you did in GoodData you can use the prepared script in [utils.py](utils.py). All data are stored in [bootstrap/gooddata](bootstrap/gooddata/) directory.
+```bash
+# first install requirement
+python -m pip install gooddata-sdk==1.1.0
+
+# run utils.py in interactive mode
+python -i utils.py
+
+# store your progress using store function
+>>> store()
+
+# load stored layout to GoodData using load function
+>>> load()
+```
+
 ## dbt metrics
 
 You can change dbt metrics in [dbt model schema file](bootstrap/data_transformation/models/order_lines/schema.yml). When you update metrics all you need to do is to run the following commands in [data_transformation](bootstrap/data_transformation/) folder:
