@@ -1,7 +1,7 @@
 content:
   format: '#,##0.00%'
   maql: "SELECT\n  (\n  SELECT {metric/gd_revenue}\n    WHERE (\n    SELECT {metric/revenue_top_10}\n\
-    \      BY {label/customers.customer_id}) > 0)\n  /\n  {metric/gd_revenue}"
+    \      BY {label/customers.customer_id} ALL OTHER) > 0)\n  /\n  {metric/gd_revenue}"
 description: ''
 id: revenue_from_top_10_customers
 title: '% Revenue from Top 10% Customers'

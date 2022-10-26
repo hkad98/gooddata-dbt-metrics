@@ -4,6 +4,7 @@ content:
         - measure:
             definition:
               measureDefinition:
+                computeRatio: false
                 filters: []
                 item:
                   identifier:
@@ -34,6 +35,6 @@ content:
         direction: asc
   version: '2'
   visualizationUrl: local:table
-description: Contribution of Top 10% customers by Product
+description: GD Contribution of Top 10% customers by Product
 id: 2f82d5d5-eb56-485d-b4dc-43510f610880
-title: Contribution of Top 10% customers by Product
+title: GD Contribution of Top 10% customers by Product

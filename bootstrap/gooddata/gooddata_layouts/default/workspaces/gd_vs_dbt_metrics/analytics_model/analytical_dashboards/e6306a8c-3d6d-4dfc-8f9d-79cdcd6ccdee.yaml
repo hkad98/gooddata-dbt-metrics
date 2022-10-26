@@ -5,7 +5,52 @@ content:
       type: filterContext
   layout:
     sections:
-      - items:
+      - header:
+          description: "Visualizations below show the contribution of the Top 10%\
+            \ of customers by Product. This is a more complex metric instead of the\
+            \ previous one.  \nGoodData solution is more straightforward and REUSEABLE,\
+            \ unlike the solution from dbt. \n\nLet us change the dimensions for our\
+            \ metric. In GoodData, you can choose the dimensions you want, and in\
+            \ dbt, you need to copy paste your previous solution and rewrite it. See\
+            \ solutions for the contribution of the Top 10% of Customers by Region\
+            \ and State visualizations."
+          title: More complex metrics are more complex to create for dbt
+        items:
+          - size:
+              xl:
+                gridHeight: 28
+                gridWidth: 6
+            type: IDashboardLayoutItem
+            widget:
+              dateDataSet:
+                identifier:
+                  id: date
+                  type: dataset
+              description: ''
+              drills: []
+              ignoreDashboardFilters: []
+              insight:
+                identifier:
+                  id: 2f82d5d5-eb56-485d-b4dc-43510f610880
+                  type: visualizationObject
+              properties: {}
+              title: GD Contribution of Top 10% customers by Product
+              type: insight
+          - size:
+              xl:
+                gridWidth: 6
+            type: IDashboardLayoutItem
+            widget:
+              description: ''
+              drills: []
+              ignoreDashboardFilters: []
+              insight:
+                identifier:
+                  id: 24a9922e-c937-4c52-a204-2f84ff61f0dd
+                  type: visualizationObject
+              properties: {}
+              title: dbt Contribution of Top 10% customers by Product
+              type: insight
           - size:
               xl:
                 gridHeight: 30
@@ -24,31 +69,26 @@ content:
                   id: 1515d6c6-e019-4451-bc5f-f19fc4d1b2ca
                   type: visualizationObject
               properties: {}
-              title: Contribution of Top 10% Customers by Region and State
+              title: GD Contribution of Top 10% Customers by Region and State
               type: insight
           - size:
               xl:
-                gridHeight: 30
                 gridWidth: 6
             type: IDashboardLayoutItem
             widget:
-              dateDataSet:
-                identifier:
-                  id: date
-                  type: dataset
               description: ''
               drills: []
               ignoreDashboardFilters: []
               insight:
                 identifier:
-                  id: 2f82d5d5-eb56-485d-b4dc-43510f610880
+                  id: c558699d-8835-4302-bdcd-873ae77bd169
                   type: visualizationObject
               properties: {}
-              title: Contribution of Top 10% customers by Product
+              title: dbt Contribution of Top 10% Customers by Region and State
               type: insight
         type: IDashboardLayoutSection
     type: IDashboardLayout
   version: '2'
 description: ''
 id: e6306a8c-3d6d-4dfc-8f9d-79cdcd6ccdee
-title: Where dbt does not work
+title: Where dbt Metrics does not work well

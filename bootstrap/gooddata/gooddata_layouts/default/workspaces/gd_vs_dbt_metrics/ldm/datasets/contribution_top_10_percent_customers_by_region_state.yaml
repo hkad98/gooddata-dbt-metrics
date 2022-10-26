@@ -1,0 +1,33 @@
+attributes:
+  - description: Region
+    id: contribution_top_10_percent_customers_by_region_state.region
+    labels: []
+    sourceColumn: region
+    tags:
+      - Contribution top 10 percent customers by region state
+    title: Region
+  - description: State
+    id: contribution_top_10_percent_customers_by_region_state.state
+    labels: []
+    sourceColumn: state
+    tags:
+      - Contribution top 10 percent customers by region state
+    title: State
+dataSourceTableId:
+  dataSourceId: dbt-ds
+  id: contribution_top_10_percent_customers_by_region_state
+  type: dataSource
+description: Contribution top 10 percent customers by region state
+facts:
+  - description: Ratio
+    id: contribution_top_10_percent_customers_by_region_state.ratio
+    sourceColumn: ratio
+    tags:
+      - Contribution top 10 percent customers by region state
+    title: dbt Revenue from Top 10% Customers
+grain: []
+id: contribution_top_10_percent_customers_by_region_state
+references: []
+tags:
+  - Contribution top 10 percent customers by region state
+title: Contribution top 10 percent customers by region state

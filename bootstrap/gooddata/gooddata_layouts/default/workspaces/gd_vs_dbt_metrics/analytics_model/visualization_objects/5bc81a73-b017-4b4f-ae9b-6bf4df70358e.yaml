@@ -1,0 +1,41 @@
+content:
+  buckets:
+    - items:
+        - measure:
+            definition:
+              measureDefinition:
+                aggregation: sum
+                filters: []
+                item:
+                  identifier:
+                    id: ratio
+                    type: fact
+            format: '#,##0.00%'
+            localIdentifier: f63236f7d75d41f9b37686634d6b1a8a
+            title: Sum of Revenue
+      localIdentifier: measures
+    - items:
+        - attribute:
+            displayForm:
+              identifier:
+                id: revenue_customer_metric.category
+                type: label
+            localIdentifier: e88014303dbd4de792e3fe7d9d1e6e72
+        - attribute:
+            displayForm:
+              identifier:
+                id: revenue_customer_metric.product_name
+                type: label
+            localIdentifier: f4162bdb9cf94d4293bfd502a27130cc
+      localIdentifier: attribute
+  filters: []
+  properties: {}
+  sorts:
+    - attributeSortItem:
+        attributeIdentifier: e88014303dbd4de792e3fe7d9d1e6e72
+        direction: asc
+  version: '2'
+  visualizationUrl: local:table
+description: dbt Contribution of Top 10% customers by Product
+id: 5bc81a73-b017-4b4f-ae9b-6bf4df70358e
+title: dbt Contribution of Top 10% customers by Product

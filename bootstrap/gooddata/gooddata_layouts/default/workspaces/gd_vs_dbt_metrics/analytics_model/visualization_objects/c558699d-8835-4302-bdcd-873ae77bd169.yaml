@@ -1,0 +1,40 @@
+content:
+  buckets:
+    - items:
+        - measure:
+            definition:
+              measureDefinition:
+                aggregation: sum
+                filters: []
+                item:
+                  identifier:
+                    id: contribution_top_10_percent_customers_by_region_state.ratio
+                    type: fact
+            format: '#,##0.00%'
+            localIdentifier: f358f8ab9a18420fa3332a8503d85a61
+            title: Sum of dbt Revenue from Top 10% Customers
+      localIdentifier: measures
+    - items:
+        - attribute:
+            displayForm:
+              identifier:
+                id: contribution_top_10_percent_customers_by_region_state.region
+                type: label
+            localIdentifier: 8af534f5bbc2444b9fc69ff98c70c88d
+      localIdentifier: view
+    - items:
+        - attribute:
+            displayForm:
+              identifier:
+                id: contribution_top_10_percent_customers_by_region_state.state
+                type: label
+            localIdentifier: e38ed638e360442397dd9280182663b9
+      localIdentifier: stack
+  filters: []
+  properties: {}
+  sorts: []
+  version: '2'
+  visualizationUrl: local:heatmap
+description: dbt Contribution of Top 10% Customers by Region and State
+id: c558699d-8835-4302-bdcd-873ae77bd169
+title: dbt Contribution of Top 10% Customers by Region and State

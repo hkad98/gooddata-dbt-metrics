@@ -1,0 +1,48 @@
+columns:
+  - dataType: INT
+    isPrimaryKey: false
+    name: campaign_id
+  - dataType: STRING
+    isPrimaryKey: false
+    name: category
+  - dataType: INT
+    isPrimaryKey: false
+    name: customer_id
+  - dataType: STRING
+    isPrimaryKey: false
+    name: customer_name
+  - dataType: DATE
+    isPrimaryKey: false
+    name: date
+  - dataType: STRING
+    isPrimaryKey: false
+    name: order_id
+  - dataType: STRING
+    isPrimaryKey: false
+    name: order_line_id
+  - dataType: STRING
+    isPrimaryKey: false
+    name: order_status
+  - dataType: NUMERIC
+    isPrimaryKey: false
+    name: price
+  - dataType: INT
+    isPrimaryKey: false
+    name: product_id
+  - dataType: STRING
+    isPrimaryKey: false
+    name: product_name
+  - dataType: NUMERIC
+    isPrimaryKey: false
+    name: quantity
+  - dataType: STRING
+    isPrimaryKey: false
+    name: region
+  - dataType: STRING
+    isPrimaryKey: false
+    name: state
+id: revenue_all
+path:
+  - dev
+  - revenue_all
+type: VIEW

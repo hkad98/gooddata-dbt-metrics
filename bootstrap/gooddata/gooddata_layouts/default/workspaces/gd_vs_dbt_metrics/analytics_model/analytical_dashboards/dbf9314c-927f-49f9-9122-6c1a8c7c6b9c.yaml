@@ -5,7 +5,12 @@ content:
       type: filterContext
   layout:
     sections:
-      - items:
+      - header:
+          description: "Visualizations below show basic metrics \u2013 aggregation\
+            \ through time. GoodData and dbt Metrics allow you to change the time\
+            \ granularity."
+          title: Basic metrics
+        items:
           - size:
               xl:
                 gridWidth: 6

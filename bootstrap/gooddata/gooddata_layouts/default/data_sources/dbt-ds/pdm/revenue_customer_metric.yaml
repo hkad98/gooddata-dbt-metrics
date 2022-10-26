@@ -1,0 +1,21 @@
+columns:
+  - dataType: STRING
+    isPrimaryKey: false
+    name: category
+  - dataType: STRING
+    isPrimaryKey: false
+    name: product_name
+  - dataType: NUMERIC
+    isPrimaryKey: false
+    name: product_revenue_sum
+  - dataType: NUMERIC
+    isPrimaryKey: false
+    name: ratio
+  - dataType: NUMERIC
+    isPrimaryKey: false
+    name: top10percent
+id: revenue_customer_metric
+path:
+  - dev
+  - revenue_customer_metric
+type: VIEW

@@ -1,0 +1,41 @@
+content:
+  buckets:
+    - items:
+        - measure:
+            definition:
+              measureDefinition:
+                aggregation: sum
+                filters: []
+                item:
+                  identifier:
+                    id: contribution_top_10_percent_customers_by_product.ratio
+                    type: fact
+            format: '#,##0.00%'
+            localIdentifier: 69ce0c86ccc249c7bb06aa3423c298b6
+            title: Sum of dbt Revenue from Top 10% Customers
+      localIdentifier: measures
+    - items:
+        - attribute:
+            displayForm:
+              identifier:
+                id: contribution_top_10_percent_customers_by_product.category
+                type: label
+            localIdentifier: 8c23a2f1dd6940a8a6b1ea1f063351a7
+        - attribute:
+            displayForm:
+              identifier:
+                id: contribution_top_10_percent_customers_by_product.product_name
+                type: label
+            localIdentifier: 5271f830fafc47a292e1a97148e0ad0b
+      localIdentifier: attribute
+  filters: []
+  properties: {}
+  sorts:
+    - attributeSortItem:
+        attributeIdentifier: 8c23a2f1dd6940a8a6b1ea1f063351a7
+        direction: asc
+  version: '2'
+  visualizationUrl: local:table
+description: dbt Contribution of Top 10% customers by Product
+id: 24a9922e-c937-4c52-a204-2f84ff61f0dd
+title: dbt Contribution of Top 10% customers by Product

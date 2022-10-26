@@ -1,0 +1,33 @@
+attributes:
+  - description: Category
+    id: contribution_top_10_percent_customers_by_product.category
+    labels: []
+    sourceColumn: category
+    tags:
+      - Contribution top 10 percent customers by product
+    title: Category
+  - description: Product name
+    id: contribution_top_10_percent_customers_by_product.product_name
+    labels: []
+    sourceColumn: product_name
+    tags:
+      - Contribution top 10 percent customers by product
+    title: Product name
+dataSourceTableId:
+  dataSourceId: dbt-ds
+  id: contribution_top_10_percent_customers_by_product
+  type: dataSource
+description: Contribution top 10 percent customers by product
+facts:
+  - description: Ratio
+    id: contribution_top_10_percent_customers_by_product.ratio
+    sourceColumn: ratio
+    tags:
+      - Contribution top 10 percent customers by product
+    title: dbt Revenue from Top 10% Customers
+grain: []
+id: contribution_top_10_percent_customers_by_product
+references: []
+tags:
+  - Contribution top 10 percent customers by product
+title: Contribution top 10 percent customers by product
