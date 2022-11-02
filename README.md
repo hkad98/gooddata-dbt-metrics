@@ -3,6 +3,7 @@
 Important links:
 * [GoodData metrics documentation](https://www.gooddata.com/developers/cloud-native/doc/cloud/create-metrics/concepts/metrics?utm_medium=blogpost&utm_source=medium.com&utm_campaign=gooddata_dbt_metrics&utm_content=autor_patrik)
 * [dbt metrics documentation](https://docs.getdbt.com/docs/build/metrics)
+* [GoodData trial](https://www.gooddata.com/trial?utm_medium=blogpost&utm_source=medium.com&utm_campaign=gooddata_dbt_metrics&utm_content=autor_patrik)
 
 ## How to use this repo
 There is a docker-compose.yaml file where are two defined services. One service starts GoodData and the second is bootstrapping of GoodData and dbt metrics. Run the following command in the root directory of this repo to start up services.
