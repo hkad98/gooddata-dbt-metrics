@@ -1,7 +1,7 @@
 # This repository compares GoodData and dbt metrics
 
 Important links:
-* [GoodData metrics documentation](https://www.gooddata.com/developers/cloud-native/doc/cloud/create-metrics/concepts/metrics/)
+* [GoodData metrics documentation](https://www.gooddata.com/developers/cloud-native/doc/cloud/create-metrics/concepts/metrics?utm_medium=blogpost&utm_source=medium.com&utm_campaign=gooddata_dbt_metrics&utm_content=autor_patrik)
 * [dbt metrics documentation](https://docs.getdbt.com/docs/build/metrics)
 
 ## How to use this repo
