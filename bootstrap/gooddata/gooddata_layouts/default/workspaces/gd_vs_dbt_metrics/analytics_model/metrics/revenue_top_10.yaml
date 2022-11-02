@@ -1,6 +1,6 @@
 content:
   format: '#,##0.00%'
-  maql: SELECT {metric/gd_revenue} WHERE TOP(10%) OF ({metric/gd_revenue})
+  maql: "SELECT {metric/gd_revenue}\n  WHERE TOP(10%) OF ({metric/gd_revenue})"
 description: ''
 id: revenue_top_10
 title: Revenue / Top 10%

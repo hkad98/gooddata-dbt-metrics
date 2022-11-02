@@ -34,7 +34,7 @@ content:
                   id: 2f82d5d5-eb56-485d-b4dc-43510f610880
                   type: visualizationObject
               properties: {}
-              title: GD Contribution of Top 10% customers by Product
+              title: GD Contribution of Top 10% Customers by Product
               type: insight
           - size:
               xl:
@@ -49,7 +49,7 @@ content:
                   id: 24a9922e-c937-4c52-a204-2f84ff61f0dd
                   type: visualizationObject
               properties: {}
-              title: dbt Contribution of Top 10% customers by Product
+              title: dbt Contribution of Top 10% Customers by Product
               type: insight
           - size:
               xl:
